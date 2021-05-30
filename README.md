@@ -15,3 +15,25 @@ curl --location --request POST 'http://localhost:3333/users' \
     "name": "teste",
     "username": "alvaroico"
 }'
+
+Criando o Banco
+npm i @adonisjs/lucid
+node ace configure @adonisjs/lucid
+❯ Select the database driver you want to use …  Press <SPACE> to select
+◉ SQLite
+◯ MySQL / MariaDB
+◯ PostgreSQL
+◯ OracleDB
+◯ Microsoft SQL Server
+❯ Select where to display instructions …  Press <ENTER> to select
+  In the browser
+▸ In the terminal
+
+# Migration
+
+node ace make:migration users
+node ace migration:run
+
+# Model
+node ace make:model users
+
