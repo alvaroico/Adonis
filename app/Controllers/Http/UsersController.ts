@@ -10,4 +10,10 @@ export default class UsersController {
     })
     return user
   }
+
+  public async index(){
+    const all = await User.all()
+
+    return all
+  }
 }

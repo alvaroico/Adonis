@@ -37,3 +37,5 @@ node ace migration:run
 # Model
 node ace make:model users
 
+# listando o banco 
+curl --location --request GET 'http://localhost:3333/users'
